@@ -1,0 +1,8 @@
+docker volume create  my_volume
+docker run -d -v my_volume:/usr/share/nginx/html --name myapp1 -p 80:80 nginx
+docker exec -it myapp /bin/bash
+cd /usr/share/nginx/html
+echo "Hello World" > index.html
+exit
+docker run -d -v my_volume:/usr/share/nginx/html --name myapp2 -p 81:80 nginx
+Port 81 shows Hello World

@@ -1,0 +1,4 @@
+docker build -f Assignment3/Dockerfile -t go-app-multi .
+docker run -d --name go-app-multi -p 8082:8080 go-app-multi
+curl http://localhost:8082/
+should print hello

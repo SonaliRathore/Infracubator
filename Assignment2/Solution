@@ -1,0 +1,8 @@
+docker build -f Assignment2/Dockerfile -t go-app .
+docker run -d --name go-app1 -p 8080:8080 go-app
+curl http://localhost:8080/
+docker tag image_id go-app:v1
+docker history go-app
+docker login
+docker push go-app:v1
+

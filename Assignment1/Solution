@@ -1,0 +1,12 @@
+1 colima start
+2 docker pull nginx
+3 docker run -d --name my-nginx -p 81:80 nginx   (copy containerId)
+4 open "http://localhost:81/" in browser to access nginx
+5 To check logs continuously : docker logs -f container_id
+6 To go inside container : docker exec -it container_id nginx
+7 To stop the container: docker stop container_id
+
+
+
+
+
