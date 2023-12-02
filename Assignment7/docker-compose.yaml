@@ -3,6 +3,7 @@ services:
   redis-for-app:
     image: redis
     hostname: redis-go-app
+
   go-app:
     image: go-app-redis
     ports:

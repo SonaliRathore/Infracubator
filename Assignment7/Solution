@@ -1,5 +1,5 @@
-cd Assignment7
-docker-compose up -d
-docker ps
-containers should be created
+1 cd Assignment7
+2 docker-compose up -d
+3 docker ps: 2 new containers should be created
+
 check endpoint: http://localhost:8082/vote
