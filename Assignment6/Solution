@@ -1,0 +1,8 @@
+1 docker network create my_network
+2 docker run -d --name redis-network --network=my_network redis
+3 docker run -d --name redis-go-app --network=my_network -p 8081:8080 -e REDIS_HOST=redis-network go-app-redis
+
+check endpoint: http://localhost:8081/vote
+
+NOTE: go-app-redis image created in assignment 5
+
